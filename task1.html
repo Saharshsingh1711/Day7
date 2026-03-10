@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="butt">Click here</button>
+    <br>
+    <h>Count:</h>
+    <p id="para">0</p>
+    <script>
+        const buttonfunc=document.getElementById("butt");
+        console.log(buttonfunc);
+        buttonfunc.addEventListener("click",function(){
+            // buttonfunc.disabled=true;
+            // buttonfunc.innerText="please wait";
+            // document.body.style.backgroundColor="orange";
+            // heading.style.color="white";
+            const para=document.getElementById("para")
+            let count=para.Content;
+            count++;
+            para.textContent=count;
+        })
+
+    </script>
+</body>
+</html>
