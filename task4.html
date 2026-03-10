@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input type="password" id="password" placeholder="Enter password">
+<button onclick="checkPassword()">Check</button>
+<script>
+function checkPassword() {
+    let password = document.getElementById("password").value;
+    let pattern = /^[A-Z][A-Za-z0-9]{7,9}$/;
+    if(pattern.test(password)) {
+        alert("Valid Password");
+    } else {
+        alert("Invalid Password");
+    }
+}
+</script>
+</body>
+</html>
